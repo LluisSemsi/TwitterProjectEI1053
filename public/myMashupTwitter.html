@@ -1,0 +1,58 @@
+<html>
+<meta charset="UTF-8">
+<head>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://timdream.org/wordcloud2.js/src/wordcloud2.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD6hLLddlXLuJE52eCmsFbA8OGZ0eh_UO4&sensor=false"></script>
+<script src="jsonldGen.js"></script>
+<script type="text/javascript" src="javaFunctions.js"></script>
+
+
+
+<body onload="addFields()">
+
+<h1>My Mash-up</h1>
+<!--Hidden form for creating new buttons -->
+<div id="form-container"><br>
+		<input id="query" placeholder="..tu consulta aquí">
+		    <button onclick="getBabelNetData()">Get URIs</button>
+		<div id="labelarea">
+		</div>
+		<div id="fieldsarea">
+		</div>
+		<button id = "create">Create Stream</button><br>
+</div>
+
+<table cols="4">
+<tr>
+	<td colspan="4"> 
+		<div id="streamlist"></div>
+	</td>
+</tr>
+ <tr>
+     <td>
+         <canvas id="wordcloud"></canvas> </td>
+    <td>
+		 <canvas id="polarity"></canvas>
+
+    </td>
+    <td>
+    	<ul id="idTwits"></ul>
+    </td>
+	<td>
+		<div id="mapcanvas"></div>
+	</td>
+ </tr>
+ <tr>
+	<td colspan="3">
+		<div id="fotos"></div>
+	</td>
+</tr>
+</table>
+
+</body>
+</html>

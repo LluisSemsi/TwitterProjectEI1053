@@ -1,0 +1,71 @@
+body{
+	margin: 0px; 
+	text-align: center;
+	width: 100%;
+}
+
+h1{
+	width:80%;
+	text-align: center;
+}
+
+button {
+    border: 1px solid black;
+    background-color: lightgray;
+    color: black;
+    border-radius: 0.5em;
+    padding: 4px;
+    margin: 3px;
+    width: 100px;
+}
+
+button#new{
+	width: 50px;
+	background-color: white;
+}
+
+table{
+	width:80%;
+	margin-left: 30px;
+}
+
+div#streamlist{
+    width:910px;
+    height:30px;
+    background-color:purple;
+}
+
+div#form-container{
+	visibility: hidden;
+	width:350px;
+	height:300px;
+}
+
+canvas#wordcloud{
+    width:300px;
+    height:300px;
+    background-color:lightgrey;
+}
+
+canvas#polarity{
+    width:300px;
+    height:300px;
+    background-color:lightgrey;
+}
+	
+div#mapcanvas{
+    width:300px;
+    height:300px;
+    background-color:lightgrey;
+}
+	
+div#fotos{
+	width:910px;
+    height:150px;
+    text-align:center;
+    background-color:purple;
+}
+
+ul#idTwits{
+	text-align: left;
+}
